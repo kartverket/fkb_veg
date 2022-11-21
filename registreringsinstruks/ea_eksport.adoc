@@ -5,7 +5,11 @@
 [[parkeringsområde]]
 === Objekttype: Parkeringsområde
 *Definisjon fra FKB produktspesifikasjon*: Omr&#229;de for parkering av kj&#248;ret&#248;y.
-
+ 
+ 
+.Illustrasjon av objekttype Parkeringsområde
+image::http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/5.0/figurer/objtype_parkeringsomrade.png[link=http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/5.0/figurer/objtype_parkeringsomrade.png, Alt="Illustrasjon av objekttype: Parkeringsområde"]
+ 
  
 .Illustrasjon fra produktspesifikasjon av Parkeringsområde
 image::http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/5.0/figurer/objtype_parkeringsomrade.png[link=http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/5.0/figurer/objtype_parkeringsomrade.png, Alt="Illustrasjon fra produktspesifikasjon: Parkeringsområde"]
@@ -294,7 +298,7 @@ image::http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/5.0/figurer/o
 ==== Tilleggsinformasjon for fotogrammetrisk registrering
 Benyttes ogs&#229; for tydelig opparbeida sammenhengende Gang/sykkelveger uten direkte tilknytning til kj&#248;reveg 
 
-Ved fotogrammetrisk kartlegging kan det v&#230;re vanskelig &#229; se forskjell p&#229; GangSykkelveg, fortau, gangveg og annet vegareal. Veglenke fra Elveg skal benyttes som manus for registrering av VegG&#229;endeOgSyklende.  
+Ved fotogrammetrisk kartlegging kan det v&#230;re vanskelig &#229; se forskjell p&#229; GangSykkelveg, fortau, gangveg og annet vegareal. Veglenke fra Elveg skal benyttes som manus for registrering av VegG&#229;endeOgSyklende.  Det presiseres at flate VegG&#229;endeOgSyklende skal deles der det er forskjellig bruk av vegen. B&#229;de n&#229;r de er skilt med kantstein/niv&#229; og n&#229;r de kun er skilt med oppmerking. Klassifisering av typeveg i Elveg er styrende for tolkningen. For typeveg-inndeling, se figur 16 i dette dokumentet.
 
 GangSykkelveg kan v&#230;re fremkommelige for kj&#248;ret&#248;y men er ikke &#229;pen for annet enn kj&#248;ring for ”teknisk vedlikehold”, kj&#248;ring til eiendommene og evt n&#248;dhjelpskj&#248;ring. 
 
@@ -309,7 +313,7 @@ Kodeliste for egenskapen typeveg finnes p&#229; https://register.geonorge.no/sos
  
 '''
 .Eksempel på registrering av fortau som går mot bygning/husvegg. Egenskap Typeveg tilhører Elveg.
-image::figurer/fortau_eksempel_paa_registrering.png[link=figurer/fortau_eksempel_paa_registrering.png, Alt="Eksempel på registrering av fortau som går mot bygning/husvegg. Egenskap Typeveg tilhører Elveg."]
+image::figurer/veggaendeogsyklende.png[link=figurer/veggaendeogsyklende.png, Alt="Eksempel på registrering av fortau som går mot bygning/husvegg. Egenskap Typeveg tilhører Elveg."]
  
  
 '''
@@ -334,12 +338,12 @@ image::figurer/gangsykkelveg_og_fortau_langs_veg.png[link=figurer/gangsykkelveg_
  
 '''
 .Eksempel på registrering av sykkelveg og gangveg uten fysisk skille mellom seg (kun oppmerking).
-image::figurer/registrering_sykkelveg_gangveg_uten_skille.png[link=figurer/registrering_sykkelveg_gangveg_uten_skille.png, Alt="Eksempel på registrering av sykkelveg og gangveg uten fysisk skille mellom seg (kun oppmerking)."]
+image::figurer/vegflater.png[link=figurer/vegflater.png, Alt="Eksempel på registrering av sykkelveg og gangveg uten fysisk skille mellom seg (kun oppmerking)."]
  
  
 '''
 .Eksemplet viser andre objekttyper og hvordan forrige bilde med flater og avgrensningslinjer henger sammen med veglenkene i Elveg.
-image::figurer/sykkelveg_gangveg_uten_skille_med_veglenker.png[link=figurer/sykkelveg_gangveg_uten_skille_med_veglenker.png, Alt="Eksemplet viser andre objekttyper og hvordan forrige bilde med flater og avgrensningslinjer henger sammen med veglenkene i Elveg."]
+image::figurer/veglenker.png[link=figurer/veglenker.png, Alt="Eksemplet viser andre objekttyper og hvordan forrige bilde med flater og avgrensningslinjer henger sammen med veglenkene i Elveg."]
  
  
 '''
@@ -946,7 +950,7 @@ Merknad: Vegdekkekant skal etableres sammenhengende uansett tilst&#248;tende lan
  
 '''
 .Eksempel på registrering av fortauskanter med Vegdekkekant (tegnet med rød strek)  
-image::figurer/fortauskant_med_vegdekkekant.png[link=figurer/fortauskant_med_vegdekkekant.png, Alt="Eksempel på registrering av fortauskanter med Vegdekkekant (tegnet med rød strek)  "]
+image::figurer/fortauskant.png[link=figurer/fortauskant.png, Alt="Eksempel på registrering av fortauskanter med Vegdekkekant (tegnet med rød strek)  "]
  
  
 '''
@@ -1139,10 +1143,16 @@ image::http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/5.0/figurer/o
 [discrete]
 ==== Tilleggsinformasjon for fotogrammetrisk registrering
 Skal benyttes i f&#248;lgende tilfeller:
+
 - Avgrensning av flater med ulik vegnummer og medium
+
 - Avgrensning av flater med forskjellige typeveg der ikke fysisk skille kan sees i bildene
+
 - Oppdeling av vegflater i mer h&#229;ndterbare/kortere flater
+
 - Oppdeling av flater der avgrensningen mellom vegflatene best&#229;r av kun oppmerking, for eksempel mellom gang- og sykkelareal p&#229; en oppmerket og oppdelt gang- og sykkelveg (sammenfaller i grunnriss og h&#248;yde med vegoppmerking)
+
+Det presiseres at VegFiktivGrense ogs&#229; skal brukes i avgrensning mellom VegKj&#248;rende og VegG&#229;endeOgSyklende (typeveg fortau) mot avkj&#248;rsler.
 
 Objekttype VegFiktivGrense tegnes normalt ikke ut p&#229; kart, men trengs for etablering av flater. Oftest er det ingen synlig linje i terrenget.
 
@@ -1164,6 +1174,11 @@ image::figurer/vegfiktivgrense_fortau.png[link=figurer/vegfiktivgrense_fortau.pn
 '''
 .Eksempel på registrering av objekttype VegFiktivGrense i forbindelse med gågate, fortau og enkel bilveg som grenser til hverandre uten fysiske eller synlige skiller  
 image::figurer/vegfiktivgrense_gaagate.png[link=figurer/vegfiktivgrense_gaagate.png, Alt="Eksempel på registrering av objekttype VegFiktivGrense i forbindelse med gågate, fortau og enkel bilveg som grenser til hverandre uten fysiske eller synlige skiller  "]
+ 
+ 
+'''
+.Eksempel på riktig registrering av VegFiktivGrense og VegAnnenAvgrensning i forbindelse med avkjørsel over fortau.
+image::figurer/vegfiktivgrense2.png[link=figurer/vegfiktivgrense2.png, Alt="Eksempel på riktig registrering av VegFiktivGrense og VegAnnenAvgrensning i forbindelse med avkjørsel over fortau."]
  
  
  
@@ -1492,12 +1507,19 @@ image::http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/5.0/figurer/o
  
 [discrete]
 ==== Tilleggsinformasjon for fotogrammetrisk registrering
-Skal registreres som lukket polygon (ett objekt).
+Skal registreres som lukket polygon (ett objekt). 
+
+Det presiseres at avgrensning til alle typer fartsdempere skal registreres s&#229; lenge de er synlige i bildene.
  
  
 '''
 .Eksempel på registrering av FartsdemperAvgrensning (tegnet med røde streker)
 image::figurer/fartsdemperavgrensning.png[link=figurer/fartsdemperavgrensning.png, Alt="Eksempel på registrering av FartsdemperAvgrensning (tegnet med røde streker)"]
+ 
+ 
+'''
+.Eksempel på fartsdempere av "smal type" som skal registreres.
+image::figurer/fartsdemperavgrensning2.png[link=figurer/fartsdemperavgrensning2.png, Alt="Eksempel på fartsdempere av "smal type" som skal registreres."]
  
  
  
@@ -2156,6 +2178,7 @@ I sm&#229; rundkj&#248;ringer er ofte ytre del av sentral&#248;ya etablert som e
 
 I trange og smale kryss og rundkj&#248;ringer kan ogs&#229; sidearealet p&#229; vegen og deler av dele&#248;y v&#230;re overkj&#248;rbart. Her registreres avgrensningen mot vegen som Vegdekkekant. Avgrensningen ut mot dele&#248;y eller terreng registreres som Overkj&#248;rbartArealAvgrensning. 
 
+Det presiseres at helt overkj&#248;rbart areal (i samme plan som vegbanen, men avgrenset med oppmerking eller annen type dekke) ikke skal registreres som overkj&#248;rbart areal.
 
 Merknad: Det skal etableres nodepunkt mellom Overkj&#248;rbartArealAvgrensning og andre tilst&#248;tende vegsituasjonsobjekter. Nodepunktene etableres i 3D der dette er naturlig.
  
@@ -2163,11 +2186,6 @@ Merknad: Det skal etableres nodepunkt mellom Overkj&#248;rbartArealAvgrensning o
 '''
 .Eksempel på registrering av objekttype OverkjørbartArealAvgrensning. NB! Bildet er ikke dekkende for alle objekttyper og viser KUN Vegdekkekant og OverkjørbartArealAvgrensning
 image::figurer/overkjorbartarealavgrensning_eksempel_rundkjoring.png[link=figurer/overkjorbartarealavgrensning_eksempel_rundkjoring.png, Alt="Eksempel på registrering av objekttype OverkjørbartArealAvgrensning. NB! Bildet er ikke dekkende for alle objekttyper og viser KUN Vegdekkekant og OverkjørbartArealAvgrensning"]
- 
- 
-'''
-.Eksempel på registrering av objekttype OverkjørbartArealAvgrensning. Bildet viser at det skal registreres dobbelt ved overkjørbar trafikkøy, altså både Vegdekkekant (med flate Trafikkøy) og OverkjørbartArealAvgrensning
-image::figurer/overkjorbartarealavgrensning_eksempel_trafikkoy.png[link=figurer/overkjorbartarealavgrensning_eksempel_trafikkoy.png, Alt="Eksempel på registrering av objekttype OverkjørbartArealAvgrensning. Bildet viser at det skal registreres dobbelt ved overkjørbar trafikkøy, altså både Vegdekkekant (med flate Trafikkøy) og OverkjørbartArealAvgrensning"]
  
  
  
