@@ -2,7 +2,7 @@
 ifeval::["{backend}" == "html5"]
 
 ****
-//WARNING: Denne standarden er erstattet av en nyere versjon!
+WARNING: Denne standarden er erstattet av en nyere versjon!
 
 [TIP]
 Dette dokumentet kan også lastes ned link:{prodspek-url}/{versjon}/{datasett}_{versjon}.pdf[som PDF].
@@ -26,7 +26,7 @@ ifeval::["{backend}" == "pdf"]
 {empty} +
 
 ****
-//WARNING: Denne standarden er erstattet av en nyere versjon!
+WARNING: Denne standarden er erstattet av en nyere versjon!
 
 *Publisert*: {publisert} +
 *Denne versjonen finnes på*: {prodspek-url}/{versjon} +
