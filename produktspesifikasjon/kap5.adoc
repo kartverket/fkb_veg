@@ -1,5 +1,5 @@
 // Start of UML-model
-=== Pakke: «ApplicationSchema» FKB-Veg-5.0
+=== Pakke: «ApplicationSchema» FKB-Veg-5.0.1
 *Definisjon:* Datamodell for produktspesifikasjonen FKB-Veg. FKB-Veg inneholder detaljert informasjon om veganlegg og tilhørende objekter. Datamodellen omfatter beskrivelse av alle typer veger for kjørende, syklende og gående, i tillegg et utvalg av tilhørende objekter.
  
 [discrete]
@@ -37,7 +37,7 @@
 |https://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/5.0
  
 |version
-|5.0
+|5.0.1
  
 |xmlns
 |app
@@ -268,6 +268,7 @@ SOSI_navn: INFORMASJON +
 |<<medium,«CodeList» Medium>>
 |Profilparametre i tagged values: 
 |
+defaultCodeSpace: https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/medium + 
 SOSI_datatype: T + 
 SOSI_lengde: 1 + 
 SOSI_navn: MEDIUM + 
@@ -343,10 +344,10 @@ SOSI_navn: KVALITET +
  
 |Subtyper:
 |<<kjørebanekant,«FeatureType» Kjørebanekant>> +
-<<vegannenavgrensning,«FeatureType» VegAnnenAvgrensning>> +
-<<annetvegarealavgrensning,«FeatureType» AnnetVegarealAvgrensning>> +
 <<vegdekkekant,«FeatureType» Vegdekkekant>> +
+<<vegannenavgrensning,«FeatureType» VegAnnenAvgrensning>> +
 <<kantstein,«FeatureType» Kantstein>> +
+<<annetvegarealavgrensning,«FeatureType» AnnetVegarealAvgrensning>> +
 <<nvdbobjekter_kvalitetpåkrevd,«FeatureType» NVDBobjekter_KvalitetPåkrevd>> +
 |Realisering av: 
 |«ApplicationSchema» Generelle typer 5.1/SOSI_Fellesegenskaper og SOSI_Objekt::«FeatureType» SOSI_Objekt +
@@ -469,16 +470,16 @@ SOSI_navn: NVDBPEKER +
 |<<kvalitetpåkrevd,«FeatureType» KvalitetPåkrevd>>
  
 |Subtyper:
-|<<vegoppmerking,«FeatureType» Vegoppmerking>> +
-<<fartsdemperavgrensning,«FeatureType» FartsdemperAvgrensning>> +
+|<<vegbom,«FeatureType» Vegbom>> +
 <<vegrekkverk,«FeatureType» Vegrekkverk>> +
-<<gangfeltavgrensning,«FeatureType» GangfeltAvgrensning>> +
+<<overkjørbartarealavgrensning,«FeatureType» OverkjørbartArealAvgrensning>> +
+<<vegoppmerking,«FeatureType» Vegoppmerking>> +
+<<fartsdemperavgrensning,«FeatureType» FartsdemperAvgrensning>> +
+<<skiltportal,«FeatureType» Skiltportal>> +
 <<vegskulderkant,«FeatureType» Vegskulderkant>> +
+<<gangfeltavgrensning,«FeatureType» GangfeltAvgrensning>> +
 <<trafikksignalpunkt,«FeatureType» Trafikksignalpunkt>> +
 <<feristavgrensning,«FeatureType» FeristAvgrensning>> +
-<<skiltportal,«FeatureType» Skiltportal>> +
-<<vegbom,«FeatureType» Vegbom>> +
-<<overkjørbartarealavgrensning,«FeatureType» OverkjørbartArealAvgrensning>> +
 |===
  
 '''
@@ -929,20 +930,6 @@ image::http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/5.0/figurer/o
 [cols="20,80"]
 |===
 |*Rollenavn:* 
-|*avgrensesAvVegdekkekant*
- 
-|Definisjon:
-|Krav til delt flategeometri. Avgrensning av Parkeringsområde ved hjelp av Vegdekkekant.
- 
-|Multiplisitet: 
-|[0..*]
- 
-|Til klasse
-|<<vegdekkekant,«FeatureType» Vegdekkekant>>
-|===
-[cols="20,80"]
-|===
-|*Rollenavn:* 
 |*avgrensesAvVegFiktivGrense*
  
 |Definisjon:
@@ -953,6 +940,20 @@ image::http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/5.0/figurer/o
  
 |Til klasse
 |<<vegfiktivgrense,«FeatureType» VegFiktivGrense>>
+|===
+[cols="20,80"]
+|===
+|*Rollenavn:* 
+|*avgrensesAvVegdekkekant*
+ 
+|Definisjon:
+|Krav til delt flategeometri. Avgrensning av Parkeringsområde ved hjelp av Vegdekkekant.
+ 
+|Multiplisitet: 
+|[0..*]
+ 
+|Til klasse
+|<<vegdekkekant,«FeatureType» Vegdekkekant>>
 |===
 [cols="20,80"]
 |===
@@ -1224,20 +1225,6 @@ SOSI_navn: VEGOVERVEG +
 [cols="20,80"]
 |===
 |*Rollenavn:* 
-|*avgrensesAvVegFiktivGrense*
- 
-|Definisjon:
-|Krav til delt flategeometri. Avgrensning av VegGåendeOgSyklende ved hjelp av VegFiktivGrense.
- 
-|Multiplisitet: 
-|[0..*]
- 
-|Til klasse
-|<<vegfiktivgrense,«FeatureType» VegFiktivGrense>>
-|===
-[cols="20,80"]
-|===
-|*Rollenavn:* 
 |*avgrensesAvVegAnnenAvgrensning*
  
 |Definisjon:
@@ -1248,6 +1235,20 @@ SOSI_navn: VEGOVERVEG +
  
 |Til klasse
 |<<vegannenavgrensning,«FeatureType» VegAnnenAvgrensning>>
+|===
+[cols="20,80"]
+|===
+|*Rollenavn:* 
+|*avgrensesAvVegFiktivGrense*
+ 
+|Definisjon:
+|Krav til delt flategeometri. Avgrensning av VegGåendeOgSyklende ved hjelp av VegFiktivGrense.
+ 
+|Multiplisitet: 
+|[0..*]
+ 
+|Til klasse
+|<<vegfiktivgrense,«FeatureType» VegFiktivGrense>>
 |===
 [cols="20,80"]
 |===
@@ -1404,20 +1405,6 @@ SOSI_navn: VEGOVERVEG +
 [cols="20,80"]
 |===
 |*Rollenavn:* 
-|*avgrensesAvVegAnnenAvgrensning*
- 
-|Definisjon:
-|Krav til delt flategeometri. Avgrensning av VegKjørende ved hjelp av VegAnnenAvgrensning.
- 
-|Multiplisitet: 
-|[0..*]
- 
-|Til klasse
-|<<vegannenavgrensning,«FeatureType» VegAnnenAvgrensning>>
-|===
-[cols="20,80"]
-|===
-|*Rollenavn:* 
 |*avgrensesAvVegdekkekant*
  
 |Definisjon:
@@ -1428,6 +1415,20 @@ SOSI_navn: VEGOVERVEG +
  
 |Til klasse
 |<<vegdekkekant,«FeatureType» Vegdekkekant>>
+|===
+[cols="20,80"]
+|===
+|*Rollenavn:* 
+|*avgrensesAvVegAnnenAvgrensning*
+ 
+|Definisjon:
+|Krav til delt flategeometri. Avgrensning av VegKjørende ved hjelp av VegAnnenAvgrensning.
+ 
+|Multiplisitet: 
+|[0..*]
+ 
+|Til klasse
+|<<vegannenavgrensning,«FeatureType» VegAnnenAvgrensning>>
 |===
 [cols="20,80"]
 |===
@@ -1591,6 +1592,7 @@ image::http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/5.0/figurer/o
 |<<høydereferanse,«CodeList» Høydereferanse>>
 |Profilparametre i tagged values: 
 |
+defaultCodeSpace: https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/hoydereferanse + 
 SOSI_datatype: T + 
 SOSI_lengde: 6 + 
 SOSI_navn: HREF + 
@@ -1951,6 +1953,7 @@ SOSI_navn: Kurve +
 |<<høydereferanse,«CodeList» Høydereferanse>>
 |Profilparametre i tagged values: 
 |
+defaultCodeSpace: https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/hoydereferanse + 
 SOSI_datatype: T + 
 SOSI_lengde: 6 + 
 SOSI_navn: HREF + 
@@ -2047,6 +2050,7 @@ SOSI_navn: Punkt +
 |<<høydereferanse,«CodeList» Høydereferanse>>
 |Profilparametre i tagged values: 
 |
+defaultCodeSpace: https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/hoydereferanse + 
 SOSI_datatype: T + 
 SOSI_lengde: 6 + 
 SOSI_navn: HREF + 
@@ -2124,6 +2128,7 @@ SOSI_navn: FUNKSJON +
 |<<høydereferanse,«CodeList» Høydereferanse>>
 |Profilparametre i tagged values: 
 |
+defaultCodeSpace: https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/hoydereferanse + 
 SOSI_datatype: T + 
 SOSI_lengde: 6 + 
 SOSI_navn: HREF + 
@@ -2261,6 +2266,7 @@ SOSI_navn: Kurve +
 |<<høydereferanse,«CodeList» Høydereferanse>>
 |Profilparametre i tagged values: 
 |
+defaultCodeSpace: https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/hoydereferanse + 
 SOSI_datatype: T + 
 SOSI_lengde: 6 + 
 SOSI_navn: HREF + 
@@ -2341,6 +2347,7 @@ SOSI_navn: Kurve +
 |<<høydereferanse,«CodeList» Høydereferanse>>
 |Profilparametre i tagged values: 
 |
+defaultCodeSpace: https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/hoydereferanse + 
 SOSI_datatype: T + 
 SOSI_lengde: 6 + 
 SOSI_navn: HREF + 
@@ -2443,6 +2450,7 @@ SOSI_navn: VEGSYSTEM +
 |<<vegkategori,«CodeList» Vegkategori>>
 |Profilparametre i tagged values: 
 |
+defaultCodeSpace: https://register.geonorge.no/sosi-kodelister/fkb/veg/5.0/vegkategori + 
 SOSI_datatype: T + 
 SOSI_lengde: 50 + 
 SOSI_navn: VEGKATEGORI + 
@@ -2462,6 +2470,7 @@ SOSI_navn: VEGKATEGORI +
 |<<vegfase,«CodeList» Vegfase>>
 |Profilparametre i tagged values: 
 |
+defaultCodeSpace: https://register.geonorge.no/sosi-kodelister/fkb/veg/5.0/vegfase + 
 SOSI_datatype: T + 
 SOSI_lengde: 20 + 
 SOSI_navn: VEGFASE + 
