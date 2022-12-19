@@ -23,7 +23,7 @@ ifdef::backend-pdf[:toc: macro]
 :fkbdatasett: {datasett} {versjon}
 :skjema-url: {skjemabase-url}{datasett}/{versjon}
 :prodspek-url: {prodspekbase-url}{datasett}
-:uml-url: {umlbase-url}{datasett}/{versjon}
+:uml-url: {umlbase-url}{datasett}/{prodspek-versjon}
 :reginstr-url: {reginstrbase-url}{datasett}/{versjon}/{reginstr-type}_{underversjon}
 :reginstr-url-ny: {reginstrbase-url}{datasett}/{versjon}/{reginstr-type}_{erstattet-av}
 :reginstr-url-erstatter: {reginstrbase-url}{datasett}/{versjon}/{reginstr-type}_{erstatter}

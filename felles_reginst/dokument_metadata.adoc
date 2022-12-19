@@ -5,7 +5,7 @@ Geovekst
 ifdef::backend-pdf[{empty} +]
 
 ****
-WARNING: Høringsversjon! Erstattes av endelig versjon januar 2023. +
+// WARNING: Høringsversjon! Erstattes av endelig versjon januar 2023. +
 // WARNING: Denne registreringsinstruksen erstattet av en nyere versjon! +
 // *Nyeste versjon finnes på*: {reginstr-url-ny} 
 
@@ -22,9 +22,9 @@ endif::[]
 *Denne versjonen erstatter*: {reginstr-url-erstatter} +
 //- {reginstr-url}[HTML-dokument] +
 //- {reginstr-url}/{reginstr-type}_registreringsinstruks_{datasett}_{versjon}_{underversjon}.pdf[PDF-dokument] +
-*Tilhørende produktspesifikasjon finnes på*: {prodspek-url}/{versjon} +
-- {prodspek-url}/{versjon}[HTML-dokument] +
-- {prodspek-url}/{versjon}/Produktspesifikasjon_{datasett}_50.pdf[PDF-dokument] +
+*Tilhørende produktspesifikasjon finnes på*: {prodspek-url}/{prodspek-versjon} +
+- {prodspek-url}/{prodspek-versjon}[HTML-dokument] +
+- {prodspek-url}/{prodspek-versjon}/Produktspesifikasjon_{datasett}_{prodspek-versjon}.pdf[PDF-dokument] +
 - {uml-url}[HTML-visning av UML-modellen] +
 
 https://kartverket.no/geodataarbeid/geovekst[Geovekst-samarbeidet] er eier og faglig ansvarlig for spesifikasjonen.
