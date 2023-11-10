@@ -157,7 +157,8 @@ Trafikk&#248;y skal s&#229; langt som mulig registreres under bruer og trafikklo
 
 For rundkj&#248;ringer med flere indre avgrensninger (overkj&#248;rbart areal), se objekttype Overkj&#248;rbartArealAvgrensning.
 
-Trafikk&#248;y avgrenses av Vegdekkekant
+Trafikk&#248;y avgrenses av Vegdekkekant. 
+
 Trafikk&#248;yer som delvis ligger p&#229; bru (MEDIUM L) tillates splittet med VegFiktivGrense.
  
  
@@ -312,11 +313,6 @@ Kodeliste for egenskapen typeveg finnes p&#229; https://register.geonorge.no/sos
  
  
 '''
-.Eksempel på registrering av fortau som går mot bygning/husvegg. Egenskap Typeveg tilhører Elveg.
-image::figurer/veggaendeogsyklende.png[link=figurer/veggaendeogsyklende.png, Alt="Eksempel på registrering av fortau som går mot bygning/husvegg. Egenskap Typeveg tilhører Elveg."]
- 
- 
-'''
 .Eksempel på registrering av gågate som går mot bygning/husvegg. Egenskap Typeveg tilhører Elveg.
 image::figurer/gaagate_eksempel_paa_registrering.png[link=figurer/gaagate_eksempel_paa_registrering.png, Alt="Eksempel på registrering av gågate som går mot bygning/husvegg. Egenskap Typeveg tilhører Elveg."]
  
@@ -337,18 +333,23 @@ image::figurer/gangsykkelveg_og_fortau_langs_veg.png[link=figurer/gangsykkelveg_
  
  
 '''
-.Eksempel på registrering av sykkelveg og gangveg uten fysisk skille mellom seg (kun oppmerking).
-image::figurer/vegflater.png[link=figurer/vegflater.png, Alt="Eksempel på registrering av sykkelveg og gangveg uten fysisk skille mellom seg (kun oppmerking)."]
+.Eksempel på registrering av trapp i forbindelse med VegGåendeOgSyklende. I forbindelse med trapp skal vegflaten deles opp vha VegFiktivGrense. Høyden på vegdekkekanten skal følge trappeforløpet. Egenskap Typeveg tilhører Elveg.  
+image::figurer/trapp_eksempel_paa_registrering.png[link=figurer/trapp_eksempel_paa_registrering.png, Alt="Eksempel på registrering av trapp i forbindelse med VegGåendeOgSyklende. I forbindelse med trapp skal vegflaten deles opp vha VegFiktivGrense. Høyden på vegdekkekanten skal følge trappeforløpet. Egenskap Typeveg tilhører Elveg.  "]
+ 
+ 
+'''
+.Eksempel på registrering av flater for gående og syklende med fysisk skille (oftest skrånende kantstein) mellom de syklende og gående. På bildet opphører det fysiske skillet de siste meterne i sør og derfor bytter også avgrensingslinjen mellom flatene objekttype (fra Vegdekkekant til VegFiktivGrense)
+image::figurer/registrering_sykkelveg_gangveg_flater.png[link=figurer/registrering_sykkelveg_gangveg_flater.png, Alt="Eksempel på registrering av flater for gående og syklende med fysisk skille (oftest skrånende kantstein) mellom de syklende og gående. På bildet opphører det fysiske skillet de siste meterne i sør og derfor bytter også avgrensingslinjen mellom flatene objekttype (fra Vegdekkekant til VegFiktivGrense)"]
+ 
+ 
+'''
+.Eksempel på registrering av fortau som går mot bygning/husvegg. Egenskap Typeveg tilhører Elveg.
+image::figurer/veggaendeogsyklende.png[link=figurer/veggaendeogsyklende.png, Alt="Eksempel på registrering av fortau som går mot bygning/husvegg. Egenskap Typeveg tilhører Elveg."]
  
  
 '''
 .Eksemplet viser andre objekttyper og hvordan forrige bilde med flater og avgrensningslinjer henger sammen med veglenkene i Elveg.
 image::figurer/veglenker.png[link=figurer/veglenker.png, Alt="Eksemplet viser andre objekttyper og hvordan forrige bilde med flater og avgrensningslinjer henger sammen med veglenkene i Elveg."]
- 
- 
-'''
-.Eksempel på registrering av trapp i forbindelse med VegGåendeOgSyklende. I forbindelse med trapp skal vegflaten deles opp vha VegFiktivGrense. Høyden på vegdekkekanten skal følge trappeforløpet. Egenskap Typeveg tilhører Elveg.  
-image::figurer/trapp_eksempel_paa_registrering.png[link=figurer/trapp_eksempel_paa_registrering.png, Alt="Eksempel på registrering av trapp i forbindelse med VegGåendeOgSyklende. I forbindelse med trapp skal vegflaten deles opp vha VegFiktivGrense. Høyden på vegdekkekanten skal følge trappeforløpet. Egenskap Typeveg tilhører Elveg.  "]
  
  
  
@@ -983,6 +984,11 @@ image::figurer/vegdekkekant_asfaltkant.png[link=figurer/vegdekkekant_asfaltkant.
 image::figurer/vegdekkekant_for_grusveg.png[link=figurer/vegdekkekant_for_grusveg.png, Alt="Eksempel på registrering av Vegdekkekant for grusveg  "]
  
  
+'''
+.Eksempel på rulleskiløype med fast dekke som i utmarksområder registreres med Vegdekkekanter (gangveg).
+image::figurer/rulleskiloype.png[link=figurer/rulleskiloype.png, Alt="Eksempel på rulleskiløype med fast dekke som i utmarksområder registreres med Vegdekkekanter (gangveg)."]
+ 
+ 
  
 [discrete]
 ==== Føringer
@@ -1338,7 +1344,7 @@ Kan erstattes av andre objekter (for eksempel mur) n&#229;r dette er hensiktsmes
 Benyttes ogs&#229; for avgrensing av &#229;pne kj&#248;rbare omr&#229;der i tilknytning til skoler, industri, servicebygg og lignende.
 Innenfor lufthavnsomr&#229;der kan AnnetVegarealAvgrensning ogs&#229; brukes til vegsituasjon som ikke beskrives av andre objekttyper i FKB-Veg eller FKB-Lufthavn.
 
-AnnetVegarealAvgrensning registreres kun der det er tydelig skille mellom vegarealet og omkringliggende terreng. Detaljer inne p&#229; g&#229;rdsplasser registreres ikke, se figur 20 og 21.
+AnnetVegarealAvgrensning registreres kun der det er tydelig skille mellom vegarealet og omkringliggende terreng. Detaljer inne p&#229; g&#229;rdsplasser registreres ikke, se figurer under.
 
 AnnetVegarealAvgrensning skal s&#229; langt som mulig registreres under bruer og trafikklokk, men ikke i tunneler. Usikker n&#248;yaktighet/synbarhet oppgis gjennom kvalitetskodingen
 
@@ -2005,19 +2011,15 @@ image::http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/5.0/figurer/o
  
 [discrete]
 ==== Tilleggsinformasjon for fotogrammetrisk registrering
-Dersom Kj&#248;rebanekant skal registreres skal denne registreres sammenhengende for alle aktuelle veger, selv om Kj&#248;rebanekant er sammenfallende med for eksempel Vegskulderkant, Vegdekkekant eller Brukonstruksjon.
-
-Kj&#248;rebanen er avgrenset av kantlinjene. I ytterkant registreres hvit kantlinje (heltrukken eller stiplet). Dersom det er midtdeler eller trafikk&#248;yer registreres i tillegg gul sperrelinje. 
-
-Der kantlinjer/sperrelinjer opph&#248;rer, for eksempel i forbindelse med rundkj&#248;ringer og kryss i byomr&#229;de, skal ogs&#229; Kj&#248;rebanekanten opph&#248;re.
+Dersom Kj&#248;rebanekant skal registreres skal denne registreres sammenhengende for alle aktuelle veger.
+Kj&#248;rebanen er avgrenset av kantlinjene eller sammenfallende med Vegdekkekant eller Vegskulderkant. I ytterkant registreres hvit kantlinje (heltrukken eller stiplet). Dersom det er midtdeler eller trafikk&#248;yer registreres i tillegg gule sperrelinjer som Kj&#248;rebanekant.
 Dersom b&#229;de Vegdekkekant, Kj&#248;rebanekant og Vegskulderkant skal registreres i et kartleggingsprosjekt, og man i flybildene ikke kan skille objekttypene fra hverandre, skal disse objekttypene ha lik geometri.
-
 Kj&#248;rebanekant skal s&#229; langt som mulig registreres under bruer og trafikklokk, men ikke i tunneler. Usikker n&#248;yaktighet/synbarhet oppgis gjennom kvalitetskodingen.
  
  
 '''
-.Eksempel på registrering av objekttypene Kjørebanekant (rød) og Vegskulderkant (grønn) inn mot kryss med rundkjøring.  Vegene til høyre skal ikke ha disse opsjonene.
-image::figurer/kjorebanekant_og_vegskulderkant_inn_mot_kryss_med_rundkjoring.png[link=figurer/kjorebanekant_og_vegskulderkant_inn_mot_kryss_med_rundkjoring.png, Alt="Eksempel på registrering av objekttypene Kjørebanekant (rød) og Vegskulderkant (grønn) inn mot kryss med rundkjøring.  Vegene til høyre skal ikke ha disse opsjonene."]
+.Eksempel på registrering av Kjørebanekant inn mot kryss med rundkjøring
+image::figurer/Kjorebanekant1_Veg.png[link=figurer/Kjorebanekant1_Veg.png, Alt="Eksempel på registrering av Kjørebanekant inn mot kryss med rundkjøring"]
  
  
  
@@ -2673,8 +2675,7 @@ image::http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/5.0/figurer/o
  
 [discrete]
 ==== Tilleggsinformasjon for fotogrammetrisk registrering
-Alle synlige vegbommer skal registreres. 
-
+Det presiseres at alle synlige vegbommer skal registreres fotogrammetrisk. Vegbommene registreres som om de er lukket/nedfelt, selv om bommen st&#229;r &#229;pen i bildene.
 
 Vegbommer er ogs&#229; representert med punktgeometri (objekttype Vegsperring) i FKB-Vegnett og FKB-TraktorvegSti. Ved fotogrammetrisk datafangst skal vegbommer kun registreres i FKB-Veg.
 
