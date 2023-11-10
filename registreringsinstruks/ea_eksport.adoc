@@ -333,13 +333,13 @@ image::figurer/gangsykkelveg_og_fortau_langs_veg.png[link=figurer/gangsykkelveg_
  
  
 '''
-.Eksempel på registrering av trapp i forbindelse med VegGåendeOgSyklende. I forbindelse med trapp skal vegflaten deles opp vha VegFiktivGrense. Høyden på vegdekkekanten skal følge trappeforløpet. Egenskap Typeveg tilhører Elveg.  
-image::figurer/trapp_eksempel_paa_registrering.png[link=figurer/trapp_eksempel_paa_registrering.png, Alt="Eksempel på registrering av trapp i forbindelse med VegGåendeOgSyklende. I forbindelse med trapp skal vegflaten deles opp vha VegFiktivGrense. Høyden på vegdekkekanten skal følge trappeforløpet. Egenskap Typeveg tilhører Elveg.  "]
+.Eksempel på registrering av flater for gående og syklende med fysisk skille (oftest skrånende kantstein) mellom de syklende og gående. På bildet opphører det fysiske skillet de siste meterne i sør og derfor bytter også avgrensingslinjen mellom flatene objekttype (fra Vegdekkekant til VegFiktivGrense)
+image::figurer/registrering_sykkelveg_gangveg_flater.png[link=figurer/registrering_sykkelveg_gangveg_flater.png, Alt="Eksempel på registrering av flater for gående og syklende med fysisk skille (oftest skrånende kantstein) mellom de syklende og gående. På bildet opphører det fysiske skillet de siste meterne i sør og derfor bytter også avgrensingslinjen mellom flatene objekttype (fra Vegdekkekant til VegFiktivGrense)"]
  
  
 '''
-.Eksempel på registrering av flater for gående og syklende med fysisk skille (oftest skrånende kantstein) mellom de syklende og gående. På bildet opphører det fysiske skillet de siste meterne i sør og derfor bytter også avgrensingslinjen mellom flatene objekttype (fra Vegdekkekant til VegFiktivGrense)
-image::figurer/registrering_sykkelveg_gangveg_flater.png[link=figurer/registrering_sykkelveg_gangveg_flater.png, Alt="Eksempel på registrering av flater for gående og syklende med fysisk skille (oftest skrånende kantstein) mellom de syklende og gående. På bildet opphører det fysiske skillet de siste meterne i sør og derfor bytter også avgrensingslinjen mellom flatene objekttype (fra Vegdekkekant til VegFiktivGrense)"]
+.Eksempel på registrering av trapp i forbindelse med VegGåendeOgSyklende. I forbindelse med trapp skal vegflaten deles opp vha VegFiktivGrense. Høyden på vegdekkekanten skal følge trappeforløpet. Egenskap Typeveg tilhører Elveg.  
+image::figurer/trapp_eksempel_paa_registrering.png[link=figurer/trapp_eksempel_paa_registrering.png, Alt="Eksempel på registrering av trapp i forbindelse med VegGåendeOgSyklende. I forbindelse med trapp skal vegflaten deles opp vha VegFiktivGrense. Høyden på vegdekkekanten skal følge trappeforløpet. Egenskap Typeveg tilhører Elveg.  "]
  
  
 '''
@@ -736,9 +736,13 @@ image::http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/5.0/figurer/o
 [discrete]
 ==== Tilleggsinformasjon for fotogrammetrisk registrering
 Skal benyttes i f&#248;lgende tilfeller:
+
 - Avgrensing av privat avkj&#248;rsel mot veg
+
 - Ved forlengelse av vegkant tvers over andre avkj&#248;ringer (for eksempel traktorveger)
+
 - Ved forlengelse av vegkant over &#229;pne arealer, som parkeringsplasser langs vegen, industriomr&#229;der og g&#229;rdsplasser
+
 - Endeavgrensning av blindveger
 
 Objekttype VegAnnenAvgrensning kan ogs&#229; benyttes for avgrensning av for eksempel fortau og g&#229;gater som g&#229;r helt inntil husvegg (for eksempel Karl Johans gate). I forbindelse med fotogrammetrisk ajourf&#248;ring skal ikke VegAnnenAvgrensning under bygning endres hvis ikke det har skjedd en tydelig fysisk endring p&#229; bygningen. Denne typen avgrensninger er oftest lagt inn administrativt.
@@ -965,6 +969,11 @@ image::figurer/gangveg_med_vegdekkekant.png[link=figurer/gangveg_med_vegdekkekan
  
  
 '''
+.Eksempel på rulleskiløype med fast dekke som i utmarksområder registreres med Vegdekkekanter (gangveg).
+image::figurer/rulleskiloype.png[link=figurer/rulleskiloype.png, Alt="Eksempel på rulleskiløype med fast dekke som i utmarksområder registreres med Vegdekkekanter (gangveg)."]
+ 
+ 
+'''
 .Eksempel på registrering av trafikkøyer med Vegdekkekant (tegnet med rød strek)
 image::figurer/trafikkoy_med_vegdekkekant.png[link=figurer/trafikkoy_med_vegdekkekant.png, Alt="Eksempel på registrering av trafikkøyer med Vegdekkekant (tegnet med rød strek)"]
  
@@ -982,11 +991,6 @@ image::figurer/vegdekkekant_asfaltkant.png[link=figurer/vegdekkekant_asfaltkant.
 '''
 .Eksempel på registrering av Vegdekkekant for grusveg  
 image::figurer/vegdekkekant_for_grusveg.png[link=figurer/vegdekkekant_for_grusveg.png, Alt="Eksempel på registrering av Vegdekkekant for grusveg  "]
- 
- 
-'''
-.Eksempel på rulleskiløype med fast dekke som i utmarksområder registreres med Vegdekkekanter (gangveg).
-image::figurer/rulleskiloype.png[link=figurer/rulleskiloype.png, Alt="Eksempel på rulleskiløype med fast dekke som i utmarksområder registreres med Vegdekkekanter (gangveg)."]
  
  
  
@@ -1139,7 +1143,7 @@ image::figurer/rulleskiloype.png[link=figurer/rulleskiloype.png, Alt="Eksempel p
 *Definisjon fra FKB produktspesifikasjon*: Fiktiv avgrensningslinje (lukkelinje) for vegflater.
 
 Merknad:
-VegFiktivGrense brukes for fiktive avgrensninger av vegflater. Objektene skal derfor som hovedregel avgrense to flater.
+VegFiktivGrense brukes for fiktive avgrensninger av vegflater. Objektene skal derfor avgrense to flater.
  
  
 .Illustrasjon fra produktspesifikasjon av VegFiktivGrense
@@ -1162,7 +1166,7 @@ Det presiseres at VegFiktivGrense ogs&#229; skal brukes i avgrensning mellom Veg
 
 Objekttype VegFiktivGrense tegnes normalt ikke ut p&#229; kart, men trengs for etablering av flater. Oftest er det ingen synlig linje i terrenget.
 
-VegFiktivGrense er alltid representert i to flater, alts&#229; det er vegflater p&#229; begge sider avgrensingen.
+VegFiktivGrense skal ved fotogrammetrisk registrering alltid v&#230;re representert i to flater.
 
 VegFiktivGrense kan v&#230;re med p&#229; &#229; avgrense b&#229;de flatene for objekttypene VegKj&#248;rende og VegG&#229;endeOgSyklende.
 
