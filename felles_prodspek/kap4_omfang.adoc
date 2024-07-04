@@ -3,7 +3,7 @@
 [[HeleDatasettet]]
 === Spesifikasjonsomfang for hele spesifikasjonen
 
-==== Identifikasjon
+==== Omfangsidentifikasjon
 Hele datasettet
 
 ==== Nivå
