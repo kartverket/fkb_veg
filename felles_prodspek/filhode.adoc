@@ -23,7 +23,7 @@ ifdef::backend-pdf[:toc: macro]
 :skjema-url: {skjemabase-url}{datasett}/{skjemaversjon}
 :prodspek-url: {prodspekbase-url}{datasett}
 :uml-url: {umlbase-url}{datasett}/{versjon}
-:reginstr-url: {reginstrbase-url}{datasett}/{skjemaversjon}
+:reginstr-url: {reginstrbase-url}{datasett}/5.0
 
 
 = SOSI-standardisert produktspesifikasjon: {fkbdatasett}

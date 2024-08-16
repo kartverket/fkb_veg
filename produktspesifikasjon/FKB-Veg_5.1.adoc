@@ -21,7 +21,8 @@ FKB-Veg inneholder detaljert informasjon om alle offentlige og private veganlegg
 .Eksempel på registrering av objekttyper i FKB-Veg og hvordan disse henger sammen med vegnettet (Elveg 2.0). Kun et utvalg objekttyper er vist i figuren.
 image::figurer/alle_objekter_1.png[alt="Illustrasjon som viser eksempel på registrering av objekttyper i FKB-Veg med et utvalg objekttyper"]
 
-Mye av detaljinformasjonen om registrering av de ulike objekttypene i FKB er samlet i egne Fotogrammetriske registreringsinstrukser. Fotogrammetrisk registreringsinstruks for {datasett} 5.0 finnes på {reginstr-url}/Fotogrammetrisk_2022-01-01[{reginstr-url}/Fotogrammetrisk_2022-01-01].
+Mye av detaljinformasjonen om registrering av de ulike objekttypene i FKB er samlet i egne Fotogrammetriske registreringsinstrukser. 
+Fotogrammetrisk registreringsinstruks for {datasett} 5.0 finnes på {reginstr-url}/Fotogrammetrisk_2024-01-01[{reginstr-url}/Fotogrammetrisk_2024-01-01].
 
 Denne produktspesifikasjonen er utarbeidet iht. SOSI produktspesifikasjoner – Krav og godkjenning 5.0 <<SOSI-KRAV>>. UML-modellen som ligger til grunn for innhold i diagrammene og dokumentasjon i kap. 5, følger reglene i SOSI Regler for UML-modellering, versjon 5.1 <<SOSI-UML>>. http://sosi.geonorge.no/veiledere/UML[Denne veilederen] gir hjelp til å lese UML-diagrammene.
 
