@@ -357,12 +357,6 @@ image::figurer/veglenker.png[link=figurer/veglenker.png, Alt="Eksemplet viser an
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Inne i flaten
- 
-|FKB høydereferanse
-|Vegdekke
- 
 |FKB-A
 |Påkrevd registrering
  
@@ -374,6 +368,12 @@ image::figurer/veglenker.png[link=figurer/veglenker.png, Alt="Eksemplet viser an
  
 |FKB-D
 |Påkrevd registrering
+ 
+|FKB grunnrissreferanse
+|Inne i flaten
+ 
+|FKB høydereferanse
+|Vegdekke
  
 |===
  
@@ -516,9 +516,10 @@ VegKj&#248;rende skal registreres for europa-, riks-, fylkes-, kommunal-, skogsb
 - Vegen er gjennomkj&#248;rbar (knytter vegnettet sammen) 
 
 VegKj&#248;rende skal registreres under bruer og trafikklokk. Usikker n&#248;yaktighet/ synbarhet oppgis gjennom kvalitetskodingen. Veg i tunnel registreres ikke fotogrammetrisk, men kan legges inn i FKB-Veg fra andre datakilder og kodes da med Medium U.
-Egenskap typeveg i Elveg skal benyttes som manus for, og v&#230;re styrende for koding av vegkanter og flater i FKB-Veg. Enhver endring av geometri og egenskap typeveg i Elveg eller FKB-TraktorvegSti skal f&#248;lges opp med konsekvensretting av vegkanter og flater i FKB-Veg. Det er alltid senterlinjegeometri i Elveg og FKB-TraktorvegSti som skal v&#230;re f&#248;rende for innhold og koding av vegkanter og vegflater i FKB-Veg, ikke omvendt. I Elveg kan det ligge veglenker som ikke oppfyller kriteriene for etablering av VegKj&#248;rende (flate), for eksempel at de er kortere enn minstem&#229;l. I slike tilfeller er det ikke krav om etablering av vegflate i FKB-Veg.
+Egenskap typeveg i Elveg skal benyttes som manus for, og v&#230;re styrende for koding av vegkanter og flater i FKB-Veg. Enhver endring av geometri og egenskap typeveg i Elveg eller FKB-TraktorvegSti skal f&#248;lges opp med konsekvensretting av vegkanter og flater i FKB-Veg. Det er alltid senterlinjegeometri i Elveg og FKB-TraktorvegSti som skal v&#230;re f&#248;rende for innhold og koding av vegkanter og vegflater i FKB-Veg, ikke omvendt. I Elveg kan det ligge veglenker som ikke oppfyller kriteriene for etablering av VegKj&#248;rende (flate), for eksempel at de er kortere enn minstem&#229;l. I slike tilfeller er det ikke krav om etablering av vegflate i FKB-Veg. Det tolereres inntil +/- 10 meter avvik mellom Elveg og FKB-Veg i forbindelse med avslutning av veglenker inn p&#229; g&#229;rdsplasser o.l.
+
 Det tolereres inntil +/- 10 meter avvik mellom Elveg og FKB-Veg i forbindelse med avslutning av veglenker inn p&#229; g&#229;rdsplasser ol.
-	
+ 
 VegKj&#248;rende skal registreres fram til g&#229;rdsplass/g&#229;rdstun hvor vegarealet videre beskrives av objekttype AnnetVegarealAvgrensning.
 
 VegKj&#248;rende skal ikke registreres over &#229;pne vegareal avgrenset av AnnetVegarealAvgrensning, med mindre det faktisk g&#229;r en veg med unike adresser over omr&#229;det.
@@ -576,15 +577,6 @@ image::figurer/veglenke_i_fkb_elveg_kortere_enn_50meter_som_ikke_skal_slettes_fo
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Representasjonspunktet skal ligge inne i vegflaten
- 
-|FKB høydereferanse
-|Vegbane
- 
-|FKB registreringsmetode
-|Enkeltpunkt
- 
 |FKB-A
 |Påkrevd registrering
  
@@ -596,6 +588,15 @@ image::figurer/veglenke_i_fkb_elveg_kortere_enn_50meter_som_ikke_skal_slettes_fo
  
 |FKB-D
 |Påkrevd registrering
+ 
+|FKB grunnrissreferanse
+|Representasjonspunktet skal ligge inne i vegflaten
+ 
+|FKB høydereferanse
+|Vegbane
+ 
+|FKB registreringsmetode
+|Enkeltpunkt
  
 |===
  
@@ -780,15 +781,6 @@ image::figurer/vegannenavgrensning_parkering_busslomme.png[link=figurer/vegannen
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Forlengelse av Vegdekkekant mot annet vegareal
- 
-|FKB høydereferanse
-|Vegdekke
- 
-|FKB registreringsmetode
-|Enkeltpunkt i sekvens
- 
 |FKB-A
 |Påkrevd registrering
  
@@ -800,6 +792,15 @@ image::figurer/vegannenavgrensning_parkering_busslomme.png[link=figurer/vegannen
  
 |FKB-D
 |Påkrevd registrering
+ 
+|FKB grunnrissreferanse
+|Forlengelse av Vegdekkekant mot annet vegareal
+ 
+|FKB høydereferanse
+|Vegdekke
+ 
+|FKB registreringsmetode
+|Enkeltpunkt i sekvens
  
 |===
  
@@ -942,7 +943,7 @@ Vegdekkekant som er helt skjult av overliggende objekter eller skygge (typisk te
 Vegdekkekant som er vanskelig &#229; definere presist i terrenget p&#229; grunn av manglende kontrast mot omgivelsene (typisk grusveg) skal kodes med Synbarhet 1.
 
 For en mer fyldig beskrivelse av de forskjellige synbarhetskodene henvises det til https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/synbarhet.
-	
+ 
 Dersom b&#229;de Vegdekkekant, Kj&#248;rebanekant og Vegskulderkant skal registreres i et kartleggingsprosjekt, og det er umulig &#229; skille objekttypene fra hverandre i flybildene, skal disse objekttypene ha lik geometri.
 
 Vegdekkekant rundt trafikk&#248;yer skal registreres fullstendig og sammenhengende.
@@ -998,15 +999,6 @@ image::figurer/vegdekkekant_for_grusveg.png[link=figurer/vegdekkekant_for_grusve
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|For asfaltveger registreres asfaltkant. Dersom asfaltkanten ikke kan identifiseres, eller det ikke er asfaltdekke, benyttes kjørbanekanten eller kanten. For veger der asfalten eller grusen går helt ut til en kantstein, registreres fot kantstein.
- 
-|FKB høydereferanse
-|Vegdekke
- 
-|FKB registreringsmetode
-|Enkeltpunkt i sekvens
- 
 |FKB-A
 |Påkrevd registrering
  
@@ -1018,6 +1010,15 @@ image::figurer/vegdekkekant_for_grusveg.png[link=figurer/vegdekkekant_for_grusve
  
 |FKB-D
 |Påkrevd registrering
+ 
+|FKB grunnrissreferanse
+|For asfaltveger registreres asfaltkant. Dersom asfaltkanten ikke kan identifiseres, eller det ikke er asfaltdekke, benyttes kjørbanekanten eller kanten. For veger der asfalten eller grusen går helt ut til en kantstein, registreres fot kantstein.
+ 
+|FKB høydereferanse
+|Vegdekke
+ 
+|FKB registreringsmetode
+|Enkeltpunkt i sekvens
  
 |===
  
@@ -1177,6 +1178,11 @@ Merknad: Der det er naturlig lages nodepunkt til de andre objekttypene i vegsitu
  
  
 '''
+.Eksempel på riktig registrering av VegFiktivGrense og VegAnnenAvgrensning i forbindelse med avkjørsel over fortau.
+image::figurer/vegfiktivgrense2.png[link=figurer/vegfiktivgrense2.png, Alt="Eksempel på riktig registrering av VegFiktivGrense og VegAnnenAvgrensning i forbindelse med avkjørsel over fortau."]
+ 
+ 
+'''
 .Eksempel på registrering av objekttype VegFiktivGrense i forbindelse med fortau, gang- og sykkelveg og enkel bilveg som grenser til hverandre uten fysiske eller synlige skiller  
 image::figurer/vegfiktivgrense_fortau.png[link=figurer/vegfiktivgrense_fortau.png, Alt="Eksempel på registrering av objekttype VegFiktivGrense i forbindelse med fortau, gang- og sykkelveg og enkel bilveg som grenser til hverandre uten fysiske eller synlige skiller  "]
  
@@ -1186,25 +1192,11 @@ image::figurer/vegfiktivgrense_fortau.png[link=figurer/vegfiktivgrense_fortau.pn
 image::figurer/vegfiktivgrense_gaagate.png[link=figurer/vegfiktivgrense_gaagate.png, Alt="Eksempel på registrering av objekttype VegFiktivGrense i forbindelse med gågate, fortau og enkel bilveg som grenser til hverandre uten fysiske eller synlige skiller  "]
  
  
-'''
-.Eksempel på riktig registrering av VegFiktivGrense og VegAnnenAvgrensning i forbindelse med avkjørsel over fortau.
-image::figurer/vegfiktivgrense2.png[link=figurer/vegfiktivgrense2.png, Alt="Eksempel på riktig registrering av VegFiktivGrense og VegAnnenAvgrensning i forbindelse med avkjørsel over fortau."]
- 
- 
  
 [discrete]
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Tilsvarende objekttypen den støter mot
- 
-|FKB høydereferanse
-|Tilsvarende objekttypen den støter mot
- 
-|FKB registreringsmetode
-|Enkeltpunkt i sekvens
- 
 |FKB-A
 |Påkrevd registrering
  
@@ -1216,6 +1208,15 @@ image::figurer/vegfiktivgrense2.png[link=figurer/vegfiktivgrense2.png, Alt="Ekse
  
 |FKB-D
 |Påkrevd registrering
+ 
+|FKB grunnrissreferanse
+|Tilsvarende objekttypen den støter mot
+ 
+|FKB høydereferanse
+|Tilsvarende objekttypen den støter mot
+ 
+|FKB registreringsmetode
+|Enkeltpunkt i sekvens
  
 |===
  
@@ -1371,15 +1372,6 @@ image::figurer/annetvegarealavgrensning_eksempel_paa_tilstrekkelig_registrering.
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Asfaltkanten. Dersom denne ikke kan identifiseres eller det ikke er asfaltdekke, registreres ytre kant av vegarealet.
- 
-|FKB høydereferanse
-|Vegbane
- 
-|FKB registreringsmetode
-|Enkeltpunkt i sekvens
- 
 |FKB-A
 |Påkrevd registrering
  
@@ -1391,6 +1383,15 @@ image::figurer/annetvegarealavgrensning_eksempel_paa_tilstrekkelig_registrering.
  
 |FKB-D
 |Påkrevd registrering
+ 
+|FKB grunnrissreferanse
+|Asfaltkanten. Dersom denne ikke kan identifiseres eller det ikke er asfaltdekke, registreres ytre kant av vegarealet.
+ 
+|FKB høydereferanse
+|Vegbane
+ 
+|FKB registreringsmetode
+|Enkeltpunkt i sekvens
  
 |===
  
@@ -1537,15 +1538,6 @@ image::figurer/fartsdemperavgrensning2.png[link=figurer/fartsdemperavgrensning2.
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Kant forhøyning. Registreres som sammenhengende polygon (3D nodepunkt)
- 
-|FKB høydereferanse
-|Vegbane
- 
-|FKB registreringsmetode
-|Enkeltpunkt i sekvens
- 
 |FKB-A
 |Opsjonell registrering
  
@@ -1557,6 +1549,15 @@ image::figurer/fartsdemperavgrensning2.png[link=figurer/fartsdemperavgrensning2.
  
 |FKB-D
 |Registreres ikke
+ 
+|FKB grunnrissreferanse
+|Kant forhøyning. Registreres som sammenhengende polygon (3D nodepunkt)
+ 
+|FKB høydereferanse
+|Vegbane
+ 
+|FKB registreringsmetode
+|Enkeltpunkt i sekvens
  
 |===
  
@@ -1698,15 +1699,6 @@ Merknad: Det skal etableres nodepunkt mellom FeristAvgrensning og tilst&#248;ten
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Ytterkant rist
- 
-|FKB høydereferanse
-|Vegbane
- 
-|FKB registreringsmetode
-|Enkeltpunkt i sekvens
- 
 |FKB-A
 |Påkrevd registrering
  
@@ -1718,6 +1710,15 @@ Merknad: Det skal etableres nodepunkt mellom FeristAvgrensning og tilst&#248;ten
  
 |FKB-D
 |Påkrevd registrering
+ 
+|FKB grunnrissreferanse
+|Ytterkant rist
+ 
+|FKB høydereferanse
+|Vegbane
+ 
+|FKB registreringsmetode
+|Enkeltpunkt i sekvens
  
 |===
  
@@ -1864,15 +1865,6 @@ image::figurer/gangfeltavgrensning.png[link=figurer/gangfeltavgrensning.png, Alt
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Ytterkant av oppmerket gangfelt. Registreres som sammenhengende polygon (3D nodepunkt).
- 
-|FKB høydereferanse
-|Vegbane
- 
-|FKB registreringsmetode
-|Enkeltpunkt i sekvens
- 
 |FKB-A
 |Påkrevd registrering
  
@@ -1884,6 +1876,15 @@ image::figurer/gangfeltavgrensning.png[link=figurer/gangfeltavgrensning.png, Alt
  
 |FKB-D
 |Registreres ikke
+ 
+|FKB grunnrissreferanse
+|Ytterkant av oppmerket gangfelt. Registreres som sammenhengende polygon (3D nodepunkt).
+ 
+|FKB høydereferanse
+|Vegbane
+ 
+|FKB registreringsmetode
+|Enkeltpunkt i sekvens
  
 |===
  
@@ -2031,15 +2032,6 @@ image::figurer/Kjorebanekant1_Veg.png[link=figurer/Kjorebanekant1_Veg.png, Alt="
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Hvitstripe (heltrukken eller stiplet), eventuelt gul sperrelinje langs midtdeler/trafikkøyer
- 
-|FKB høydereferanse
-|Kjørebane
- 
-|FKB registreringsmetode
-|Enkeltpunkt i sekvens
- 
 |FKB-A
 |Opsjonell registrering
  
@@ -2051,6 +2043,15 @@ image::figurer/Kjorebanekant1_Veg.png[link=figurer/Kjorebanekant1_Veg.png, Alt="
  
 |FKB-D
 |Registreres ikke
+ 
+|FKB grunnrissreferanse
+|Hvitstripe (heltrukken eller stiplet), eventuelt gul sperrelinje langs midtdeler/trafikkøyer
+ 
+|FKB høydereferanse
+|Kjørebane
+ 
+|FKB registreringsmetode
+|Enkeltpunkt i sekvens
  
 |===
  
@@ -2199,15 +2200,6 @@ image::figurer/overkjorbartarealavgrensning_eksempel_rundkjoring.png[link=figure
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Indre dekkekant i en rundkjøring eller ytre dekkekant mot deleøy eller terreng
- 
-|FKB høydereferanse
-|Kjørebane
- 
-|FKB registreringsmetode
-|Enkeltpunkt i sekvens
- 
 |FKB-A
 |Påkrevd registrering
  
@@ -2219,6 +2211,15 @@ image::figurer/overkjorbartarealavgrensning_eksempel_rundkjoring.png[link=figure
  
 |FKB-D
 |Påkrevd registrering
+ 
+|FKB grunnrissreferanse
+|Indre dekkekant i en rundkjøring eller ytre dekkekant mot deleøy eller terreng
+ 
+|FKB høydereferanse
+|Kjørebane
+ 
+|FKB registreringsmetode
+|Enkeltpunkt i sekvens
  
 |===
  
@@ -2356,23 +2357,12 @@ image::http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/5.0/figurer/o
 [discrete]
 ==== Tilleggsinformasjon for fotogrammetrisk registrering
 Benyttes for skiltportaler med ett eller flere festepunkter til bakken.
-
-Det er ikke n&#248;dvendig &#229; registrere stolpene som skiltportalen er festet i.
  
  
 [discrete]
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Ende overligger
- 
-|FKB høydereferanse
-|Topp overligger
- 
-|FKB registreringsmetode
-|Enkeltpunkt i sekvens
- 
 |FKB-A
 |Påkrevd registrering
  
@@ -2384,6 +2374,15 @@ Det er ikke n&#248;dvendig &#229; registrere stolpene som skiltportalen er feste
  
 |FKB-D
 |Registreres ikke
+ 
+|FKB grunnrissreferanse
+|Ende overligger
+ 
+|FKB høydereferanse
+|Topp overligger
+ 
+|FKB registreringsmetode
+|Enkeltpunkt i sekvens
  
 |===
  
@@ -2523,15 +2522,6 @@ Ved fotogrammetrisk registrering kan det v&#230;re vanskelig &#229; se trafikksi
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Senter stolpe
- 
-|FKB høydereferanse
-|Som hovedregel registreres topp trafikksignal
- 
-|FKB registreringsmetode
-|Enkeltpunkt
- 
 |FKB-A
 |Påkrevd registrering
  
@@ -2543,6 +2533,15 @@ Ved fotogrammetrisk registrering kan det v&#230;re vanskelig &#229; se trafikksi
  
 |FKB-D
 |Registreres ikke
+ 
+|FKB grunnrissreferanse
+|Senter stolpe
+ 
+|FKB høydereferanse
+|Som hovedregel registreres topp trafikksignal
+ 
+|FKB registreringsmetode
+|Enkeltpunkt
  
 |===
  
@@ -2694,15 +2693,6 @@ Kodeliste for egenskapen funksjon finnes p&#229; https://register.geonorge.no/so
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Endene av bommen
- 
-|FKB høydereferanse
-|Som hovedregel registreres topp bom. Ved fotogrammetrisk registrering kan det være vanskelig å registrere topp bom, spesielt i C- og D-standarden.
- 
-|FKB registreringsmetode
-|Enkeltpunkt i sekvens
- 
 |FKB-A
 |Påkrevd registrering
  
@@ -2714,6 +2704,15 @@ Kodeliste for egenskapen funksjon finnes p&#229; https://register.geonorge.no/so
  
 |FKB-D
 |Påkrevd registrering
+ 
+|FKB grunnrissreferanse
+|Endene av bommen
+ 
+|FKB høydereferanse
+|Som hovedregel registreres topp bom. Ved fotogrammetrisk registrering kan det være vanskelig å registrere topp bom, spesielt i C- og D-standarden.
+ 
+|FKB registreringsmetode
+|Enkeltpunkt i sekvens
  
 |===
  
@@ -2875,15 +2874,6 @@ image::figurer/vegoppmerking_eksempel_paa_registrering.png[link=figurer/vegoppme
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Senter linje
- 
-|FKB høydereferanse
-|Kjørebane
- 
-|FKB registreringsmetode
-|Enkeltpunkt i sekvens
- 
 |FKB-A
 |Opsjonell registrering
  
@@ -2895,6 +2885,15 @@ image::figurer/vegoppmerking_eksempel_paa_registrering.png[link=figurer/vegoppme
  
 |FKB-D
 |Registreres ikke
+ 
+|FKB grunnrissreferanse
+|Senter linje
+ 
+|FKB høydereferanse
+|Kjørebane
+ 
+|FKB registreringsmetode
+|Enkeltpunkt i sekvens
  
 |===
  
@@ -3046,15 +3045,6 @@ image::figurer/vegrekkverk.png[link=figurer/vegrekkverk.png, Alt="Eksempler på 
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Senter vegrekkverk
- 
-|FKB høydereferanse
-|Fortrinnsvis skal høydereferansen være topp, men det tillates med registrering av fot. HREF-koding må samsvare med høydereferansen
- 
-|FKB registreringsmetode
-|Enkeltpunkt i sekvens
- 
 |FKB-A
 |Påkrevd registrering
  
@@ -3066,6 +3056,15 @@ image::figurer/vegrekkverk.png[link=figurer/vegrekkverk.png, Alt="Eksempler på 
  
 |FKB-D
 |Registreres ikke
+ 
+|FKB grunnrissreferanse
+|Senter vegrekkverk
+ 
+|FKB høydereferanse
+|Fortrinnsvis skal høydereferansen være topp, men det tillates med registrering av fot. HREF-koding må samsvare med høydereferansen
+ 
+|FKB registreringsmetode
+|Enkeltpunkt i sekvens
  
 |===
  
@@ -3247,15 +3246,6 @@ image::figurer/vegskulderkant_ved_avkjorsel_og_vegkryss.png[link=figurer/vegskul
 ==== Føringer
 [cols="h,2"]
 |===
-|FKB grunnrissreferanse
-|Så langt ut som vegarealet går. Dette kan for eksempel være ut til planumskanten, gruskanten, kantstein eller fortauskanten
- 
-|FKB høydereferanse
-|Kjørebane
- 
-|FKB registreringsmetode
-|Enkeltpunkt i sekvens
- 
 |FKB-A
 |Opsjonell registrering
  
@@ -3267,6 +3257,15 @@ image::figurer/vegskulderkant_ved_avkjorsel_og_vegkryss.png[link=figurer/vegskul
  
 |FKB-D
 |Registreres ikke
+ 
+|FKB grunnrissreferanse
+|Så langt ut som vegarealet går. Dette kan for eksempel være ut til planumskanten, gruskanten, kantstein eller fortauskanten
+ 
+|FKB høydereferanse
+|Kjørebane
+ 
+|FKB registreringsmetode
+|Enkeltpunkt i sekvens
  
 |===
  
